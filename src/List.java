@@ -55,8 +55,8 @@ public class List {
 
                 case 4: // salir del programa
                     System.out.println("¡Hasta pronto!");
-                    scanner.close(); // Cerramos el scanner
-                    return; // salir del programa
+                    scanner.close(); 
+                    return; 
 
                 default:
                     System.out.println("Opción no válida. Intenta de nuevo.");
