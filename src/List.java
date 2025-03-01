@@ -24,14 +24,14 @@ public class List {
 
             // seleccionamos la opción del usuario con un switch
             switch (opcion) {
-                case 1: // Agregar tarea
+                case 1: //agregar tarea
                     System.out.print("Escribe la tarea: ");
                     String tarea = scanner.nextLine(); // Leer la tarea
                     tareas.add(tarea); // Agregar a la lista
                     System.out.println("Tarea agregada.");
                     break;
 
-                case 2: // Ver tareas
+                case 2: // ver tareas
                     System.out.println("\n Tareas:");
                     if (tareas.isEmpty()) {
                         System.out.println("No hay tareas.");
@@ -42,7 +42,7 @@ public class List {
                     }
                     break;
 
-                case 3: // Eliminar tarea
+                case 3: // eliminar tarea
                     System.out.print("Número de tarea a eliminar: ");
                     int index = scanner.nextInt();
                     if (index > 0 && index <= tareas.size()) {
@@ -53,10 +53,10 @@ public class List {
                     }
                     break;
 
-                case 4: // Salir del programa
+                case 4: // salir del programa
                     System.out.println("¡Hasta pronto!");
                     scanner.close(); // Cerramos el scanner
-                    return; // Salimos del programa
+                    return; // salir del programa
 
                 default:
                     System.out.println("Opción no válida. Intenta de nuevo.");
